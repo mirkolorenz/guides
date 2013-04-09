@@ -1,22 +1,22 @@
 # ProPublica's Nerd Guides
 
-## Table of Contents
+## Inhaltsübersicht
 
-1. [Intro: The Design and Structure of a News Application](design-structure.md)
-2. [News Apps Style Guide](news-apps.md)
-3. [Coding Manifesto](coding-manifesto.md)
-4. [Social Tagging Guide](social-tags.html)
-5. [Data Bulletproofing Guide](data-bulletproofing.md)
+1. [Einführung: Aufbau und Struktur einer News Applikation](design-structure-german.md)
+2. [Style Guide für News Apps](news-apps-german.md)
+3. [Coding Manifesto](coding-manifesto-german.md)
+4. [Social Tagging Guide](social-tags-german.html)
+5. [Data Bulletproofing Guide](data-bulletproofing-german.md)
 
-## License
+## Lizenz
 
-These guides are copyright 2013 Pro Publica, Inc. and are licensed under a [Creative Commons BY-NC 3.0](http://creativecommons.org/licenses/by-nc/3.0/) license. You are free to share and to remix them, though not to use them commercially without permission.
+Copyright für diese Leitfäden bei Pro Publica, Inc., 2013, unter einer [Creative Commons BY-NC 3.0](http://creativecommons.org/licenses/by-nc/3.0/) Lizenz. Du kannst diese Texte verlinken und verändern, aber nicht ohne Genehmigung durch Pro Publica kommerziell nutzen.
 
-## Discuss
+## Diskussion
 
-You can submit issues using [Github Issues](https://github.com/propublica/guides/issues).
+Fragen, Probleme oder Beiträge an [Github Issues](https://github.com/propublica/guides/issues) (in Englisch)
 
-## Contributing
+## Beitragen (via GitHub)
 
 1. Fork it
 2. Create your branch (`git checkout -b my-guide`)
