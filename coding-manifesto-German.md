@@ -1,9 +1,11 @@
 # ProPublica News Apps Desk Coding Manifesto
 
 _Von Jeff Larson and Scott Klein, ProPublica_
+
 _Deutsche Übersetzung: Mirko Lorenz_
 
 *Hilf dabei mit, diese Übersetzung so gut wie möglich zu machen. Über Github können Änderungen gemeinsam erfolgen. 
+
 
 Dies ist ein Manifest für kluges Programmieren innerhalb einer Nachrichtenorganisation. Wir vermeiden dabei allgemeine Aussagen, die über den Bereich hinausreichen, mit dem wir uns auskennen: Journalistische Arbeit unter Zeitdruck mit Nutzung von Programmiercode. Deine Ergebnisse oder Erfahrungen in anderen Bereichen können andere sein. 
 
