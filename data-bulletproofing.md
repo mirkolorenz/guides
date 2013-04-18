@@ -1,12 +1,13 @@
-# A Guide to Bulletproofing Your Data
+#A Guide to Bulletproofing Your Data (Deutsche Übersetzung)
 
 _by Jennifer LaFleur, ProPublica_
 
-## Integrity Checks for Every Data Set
-
-- Make sure you know how many records you should have and that you have them all. Certain versions of Excel, especially ones used in gov't agencies, have row limits; be concerned if you or someone in your newsroom tells you they have 65,536. Database programs like MySQL have limits on the size of integers and on the length of string fields. These limits tend to be powers of two -- 2^n or 2^n-1. or 1,048,576 records, so be skeptical if your strings are 255 characters long or if a sum appears to be 2,097,152. 
-- Double-check totals or counts. Check for studies or summary reports.
-- Consistency-check all fields.  Are all city names spelled the same way? How about other important fields? Check by running a GROUP BY and sorting alphabetically by every important field. Check it for spelling inconsistencies. For example, if you’re analyzing a database of highway accidents, GROUP BY and sort ascending on the road name to check for inconsistencies.
+## Integritätsprüfung für jeden Datensatz 
+- Stell sicher, dass du die genaue Zahl der Dateneinträge kennst und dass alle vorliegen. Einige Versionen von Excel, speziell solche, die in der Verwaltung genutzt werden, haben Einschränkungen bei der maximalen Zahl der Datenreihen. Sei auf der Hut, wenn die Gesamtzahl genau 65.536 ergibt (Anmerkung: Bei Versionen vor Excel 2007 stimmt das, danach wurde die maximale Kapazität eines Tabellenblatts deutlich erhöht.)
+- Datenbank-Programme wie MySQL haben Limits bei der Länge der Integer und der Länge der Felder für Strings. Die Grenze liegt oft bei bestimmten Zweierpotenzen (2^n or 2^n-1. oder1.048.576), sei also skeptisch, wenn die Strings genau 255 Zeichen lang sind oder die Summe genau 2.097.152 ergibt.
+- Überprüfe Summen und Nummerierungen. Such nach Studien oder Zusammenfassungen. 
+- Prüfe alle Felder auf Konsistenz: Sind alle Städtenamen gleich geschrieben? Wie sieht es bei anderen wichtigen Feldern aus? Prüfe das durch Nutzung des "Sortieren nach"-Befehls mit einer alphabetischen Sortierung für jedes wichtige Feld. Such nach unterschiedlichen Schreibweisen und korrigier sie. Als Beispiel: Wenn du eine Datensammlung mit Autounfällen 
+ names spelled the same way? How about other important fields? Check by running a GROUP BY and sorting alphabetically by every important field. Check it for spelling inconsistencies. For example, if you’re analyzing a database of highway accidents, GROUP BY and sort ascending on the road name to check for inconsistencies.
 - Other basic checks: make sure all states/cities/counties are included. Check the range of fields. (For example, check for DOBs that would make people too old or too young.) 
 - Check for missing data or blank fields. Are they real values, or did something happen with an import or append query?
 - Check your methodology (if necessary) against other similar research.
