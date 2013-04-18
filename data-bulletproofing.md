@@ -1,10 +1,10 @@
 #A Guide to Bulletproofing Your Data (Deutsche Übersetzung)
 
-_by Jennifer LaFleur, ProPublica_
+_Von Jennifer LaFleur, ProPublica_
 
 ## Integritätsprüfung für jeden Datensatz 
-- Stell sicher, dass du die genaue Zahl der Dateneinträge kennst und dass alle vorliegen. Einige Versionen von Excel, speziell solche, die in der Verwaltung genutzt werden, haben Einschränkungen bei der maximalen Zahl der Datenreihen. Sei auf der Hut, wenn die Gesamtzahl genau 65.536 ergibt (Anmerkung: Bei Versionen vor Excel 2007 stimmt das, danach wurde die maximale Kapazität eines Tabellenblatts deutlich erhöht.)
-- Datenbank-Programme wie MySQL haben Limits bei der Länge der Integer und der Länge der Felder für Strings. Die Grenze liegt oft bei bestimmten Zweierpotenzen (2^n or 2^n-1. oder1.048.576), sei also skeptisch, wenn die Strings genau 255 Zeichen lang sind oder die Summe genau 2.097.152 ergibt.
+- Stell sicher, dass du die genaue Zahl der Dateneinträge kennst und dass alle vorliegen. Ältere Versionen von Excel, häufig solche, die in der öffentlichen Verwaltung genutzt werden, haben Einschränkungen bei der maximalen Zahl der Datenreihen. Sei auf der Hut, wenn die Gesamtzahl genau 65.536 ergibt. (Anmerkung: Vor Excel 2007 war das die [maximale Zahl der Datenreihen](http://de.wikipedia.org/wiki/Microsoft_Excel) in Excel. Bei neueren Versionen ist die maximale Kapazität deutlich höher.)
+- Datenbank-Programme wie MySQL haben manchmal Limits bei der Länge der [Integer](http://de.wikipedia.org/wiki/Integer_(Datentyp)) und der Länge der Felder für Strings. Die Grenze liegt oft bei bestimmten Zweierpotenzen (2^n or 2^n-1. oder1.048.576), sei also skeptisch, wenn die Strings genau 255 Zeichen lang sind oder die Summe genau 2.097.152 ergibt.
 - Überprüfe Summen und Nummerierungen. Such nach Studien oder Zusammenfassungen. 
 - Prüfe alle Felder auf Konsistenz: Sind alle Städtenamen gleich geschrieben? Wie sieht es bei anderen wichtigen Feldern aus? Prüfe das durch Nutzung des "Sortieren nach"-Befehls mit einer alphabetischen Sortierung für jedes wichtige Feld. Such nach unterschiedlichen Schreibweisen und korrigier sie. Als Beispiel: Wenn du eine Datensammlung mit Autounfällen 
  names spelled the same way? How about other important fields? Check by running a GROUP BY and sorting alphabetically by every important field. Check it for spelling inconsistencies. For example, if you’re analyzing a database of highway accidents, GROUP BY and sort ascending on the road name to check for inconsistencies.
